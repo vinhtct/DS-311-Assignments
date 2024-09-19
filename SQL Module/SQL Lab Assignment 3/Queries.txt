@@ -1,0 +1,51 @@
+Q1. 
+SELECT name
+    , breed
+FROM dogs
+WHERE gender = 'F'
+
+Q2. 
+SELECT name
+FROM dogs
+ORDER BY name
+
+Q3. 
+SELECT name
+    , breed
+FROM dogs
+WHERE name ISNULL
+
+Q4.
+SELECT name
+    , breed
+FROM dogs
+WHERE hungry = '1'
+ORDER BY age
+
+Q5.
+SELECT name
+    , MAX(age) AS 'age'
+    , temperament
+FROM dogs
+
+Q6.
+SELECT *
+FROM dogs
+ORDER BY age
+LIMIT 3
+
+Q7.
+SELECT name
+    , breed
+FROM dogs
+WHERE age BETWEEN '5' AND '10'
+ORDER BY age DESC
+
+Q8.
+SELECT name
+    , age
+    , hungry
+FROM dogs
+WHERE hungry = '1'
+HAVING age BETWEEN '2' AND '7'
+ORDER BY name
